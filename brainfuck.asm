@@ -158,7 +158,7 @@ clear:
 code:
 	dw "+++++[>+++++<-]>+++++++" ; set cell to 32 (' ' character)
 	dw "[.+]" ; loop through character set
-	dw 0
+	dw 0 ; halt character
 	
 memory:
 	; 256 cells for brainfuck
