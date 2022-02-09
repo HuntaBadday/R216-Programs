@@ -66,7 +66,7 @@ left:
 	
 output:
 	add r11, 1 ; add 1 to cursor position
-	cmp r11, 0x12ff ; check if off screen (compares with last character address of screen)
+	cmp r11, 0x10bf ; check if off screen (compares with last character address of screen)
 	jg .nextScreen ; clear screen if true
 .back:
 	mov r1, [memory+r5] ; get character
